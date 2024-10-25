@@ -1,10 +1,13 @@
 JAGL - Just a Golf Language<br>
-<input type="text" placeholder="code" id="code">
-<input type="text" placeholder="input" id="input"><br>
+<input type="text" placeholder="code" id="c">
+<input type="text" placeholder="input" id="i"><br>
 output:<p id="out"></p>
-<input type="button" value="Execute" onclick="ce()">
+<input type="button" value="Execute" onclick="ce()"><br>
 <script>
-function ce():
-  i=prompt("Hello, world?")
-  alert(i)
+function ce(){
+  c=document.getElementById("c").value;
+  i=document.getElementById("i").value;
+  o=[]
+  alert(c+", "+i)
+  }
 </script>
