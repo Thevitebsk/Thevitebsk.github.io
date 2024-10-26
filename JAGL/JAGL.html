@@ -1,18 +1,1 @@
 JAGL - Just a Golf Language<br>
-<input type="text" placeholder="code" id="c">
-<input type="text" placeholder="input" id="i"><br>
-output:<p id="o"></p>
-<input type="button" value="Execute" onclick="ce()"><br>
-<script>
-function ce(){
-  c=document.getElementById("c").value
-  i=document.getElementById("i").value
-  c=[...c];i=[...i];o=[];ip=0;m=0;t=""
-  while (c.length>ip){
-    if (c[0]=="@"){m=1}
-	if (m==1){if (c!="@"){o.push(c[0])};if (c=="@"){m=1;o.shift()}}
-	c.shift()}
-  while (o.length>0){t=o[0]+o[1];c.shift();c.shift();c.reverse();c.push(t);c.reverse}
-  document.getElementById("o").innerHTML=o;
-  }
-</script>
