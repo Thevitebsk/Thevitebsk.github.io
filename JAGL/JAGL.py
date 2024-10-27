@@ -16,5 +16,5 @@ while 1:
  elif p==len(i) and m==1:
   while 1:
    p-=1
-   if i[p]=="\n":break
-   elif p==0:break
+   if i[p]=="\n":m=0;break
+   elif p==0:m=0;break
