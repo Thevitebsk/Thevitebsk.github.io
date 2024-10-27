@@ -1,4 +1,4 @@
-="""@helo!|#"""
+i="""@helo!|#"""
 p=0;s=[];ts=[];m=0
 while True:
  if i[p]=="@":
