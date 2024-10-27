@@ -1,6 +1,6 @@
 i="""@hi|#~"""
 p=0;s=[];ts=[];m=0
-while True:
+while 1:
  if i[p]=="@":
   p+=1
   while 1:
@@ -14,7 +14,7 @@ while True:
  p+=1
  if p==len(i) and m==0:break
  elif p==len(i) and m==1:
-  while True:
+  while 1:
    p-=1
    if i[p]=="\n":break
    elif p==0:break
