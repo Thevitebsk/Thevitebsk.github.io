@@ -1,5 +1,7 @@
 <script>
 function main(){
-  i=0
+  i=document.getElementById("i").value
+  document.getElementById("o").innerHTML=i
 }
-<textarea id="i" placeholder="input"><button onclick="main()">submit</button><br>
+<textarea id="i" placeholder="input" /><button onclick="main()">submit</button><br>
+<textarea id="o" placeholder="output" read-only />
