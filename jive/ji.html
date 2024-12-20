@@ -1,1 +1,34 @@
-something something
+<script>
+function l() {
+  document.getElementById("b").innerHTML = document.getElementById("c").value.length + " "
+}
+function range(start, end) {
+  return Array.from({ length: end - start }, (_, i) => start + i)
+}
+function jive() {
+  out = "" ; s = [] ; p = 0 ; num = range(1, 10)
+  i = document.getElementById("i").value.split("\n")
+  code = document.getElementById("c").value
+  while (p < code.length) {
+    if (code[p] == "*") {
+      s.push(i.shift())
+    } else if (code[p] == "↓") {
+      out += s.pop()
+    } else if (code[p] in num){
+      s.push(Number(code[p]))
+    } else if (code[p] == "↑"){
+      out += "["+s+"]"
+    }
+    p++
+  }
+  document.getElementById("o").innerHTML = out
+}
+</script>
+<img scr="https://esolangs.org/w/images/1/18/Jive.png" width="100" alt="jive"><br>
+<textarea id="c" placeholder="code" oninput="l()" rows="8" cols="25"></textarea>
+<textarea id="i" placeholder="input" rows="8" cols="25"></textarea>
+<br><button onclick="jive()">submit</button><br>
+<tt id="o"></tt>
+<h1>segments</h1>
+<tt>[factorial]<br>*`,!↓</tt><hr>
+<br>taken from pencode!
