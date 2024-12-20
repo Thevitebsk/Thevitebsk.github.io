@@ -3,9 +3,11 @@
 <script defer src="func.js"></script>
 <script>
 function l() {
+  //length of code
   document.getElementById("b").innerHTML = document.getElementById("c").value.length + " "
 }
 function jive() {
+  //code execution
   out = "" ; s = [] ; p = 0 ; num = r(1, 10)
   i = document.getElementById("i").value.split("\n")
   code = document.getElementById("c").value
@@ -23,6 +25,7 @@ function jive() {
     }
     p++
   }
+  //output the out variable
   document.getElementById("o").innerHTML = out
 }
 </script>
