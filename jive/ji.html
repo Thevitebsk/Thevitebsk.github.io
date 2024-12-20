@@ -22,8 +22,7 @@ function jive() {
       out += "["+s+"]"
     } else if (code[p] == "[") {
     while (code[p] !== "]") {p++}
-    }
-    p++
+    } ; p++
   }
   //output the out variable
   document.getElementById("o").innerHTML = out
