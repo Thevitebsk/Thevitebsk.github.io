@@ -20,6 +20,8 @@ function jive() {
       s.push(Number(code[p]))
     } else if (code[p] == "↑") {
       out += "["+s+"]"
+    } else if (code[p] == "[") {
+    while (code[p] !== "]") {p++}
     }
     p++
   }
