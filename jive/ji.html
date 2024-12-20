@@ -14,9 +14,9 @@ function jive() {
       s.push(i.shift())
     } else if (code[p] == "↓") {
       out += s.pop()
-    } else if (code[p] in num){
+    } else if (code[p] in num) {
       s.push(Number(code[p]))
-    } else if (code[p] == "↑"){
+    } else if (code[p] == "↑") {
       out += "["+s+"]"
     }
     p++
