@@ -5,11 +5,8 @@
 function l() {
   document.getElementById("b").innerHTML = document.getElementById("c").value.length + " "
 }
-function range(start, end) {
-  return Array.from({ length: end - start }, (_, i) => start + i)
-}
 function jive() {
-  out = "" ; s = [] ; p = 0 ; num = range(1, 10)
+  out = "" ; s = [] ; p = 0 ; num = r(1, 10)
   i = document.getElementById("i").value.split("\n")
   code = document.getElementById("c").value
   while (p < code.length) {
