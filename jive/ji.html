@@ -15,9 +15,9 @@ function jive() {
     } else if (code[p] == "!") { s.push(fact(s.pop()))
     //this is gonna be fun
     } else if (code[p] == "`") { 
-      if (code[p+1]==",")  { s.push(Number(s.pop())) }
-      if (code[p+1]==".")  { s.push(parseFloat(s.pop())) } 
-      if (code[p+1]=="\"") { s.push(String(s.pop())) }
+      if (code[p+1]==",")  { s.push(Number(s.pop())) ; p++ }
+      if (code[p+1]==".")  { s.push(parseFloat(s.pop())) ; p++ } 
+      if (code[p+1]=="\"") { s.push(String(s.pop())) ; p++ }
     } //nevermind
     p++
   }
