@@ -17,6 +17,8 @@ function jive() {
       out += "["+s+"]"
     } else if (code[p] == "[") {
     while (code[p] !== "]") {p++}
+    } else if (code[p] == "!") {
+      s.push(fact(s.pop()))
     } ; p++
   }
   //output the out variable
