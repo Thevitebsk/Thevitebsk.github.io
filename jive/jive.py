@@ -1,5 +1,5 @@
 p=0; tv=tv2=0; s=[]; ts=[]
-c="""*`,[↺(↓)"""
+c=""""""
 while len(c)>p:
  if c[p]=="*":s.append(input())
  elif c[p]=="`":
