@@ -1,5 +1,5 @@
-p=0;tv=tv2=0;s=[]
-c=""""""
+p=0; tv=tv2=0; s=[]; ts=[]
+c="""*`,[↺(↓)"""
 while len(c)>p:
  if c[p]=="*":s.append(input())
  elif c[p]=="`":
@@ -12,6 +12,14 @@ while len(c)>p:
   s.append(tv)
  elif c[p]=="↑":print(s)
  elif c[p]=="↓":print(s.pop())
+ elif c[p]==":":
+  while c[p]!=":":p+=1
  elif c[p]=="[":
-  while c[p]!="]":p+=1
+  ts.append(list(map(int,range(1,s.pop()+1))));ts[0].reverse()
+  while len(ts[0]):s.append(ts[0].pop())
+ elif c[p]==")":
+  if s:
+   while c[p]!="(":p-=1
+  else:...
+ elif c[p]=="↺":s.reverse()
  p+=1
