@@ -22,4 +22,5 @@ while len(c)>p:
    while c[p]!="(":p-=1
   else:...
  elif c[p]=="↺":s.reverse()
+ elif c[p]=="]":s.append(len(s.pop()))
  p+=1
