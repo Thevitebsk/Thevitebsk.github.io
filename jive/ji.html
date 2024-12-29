@@ -1,23 +1,4 @@
 <link rel="shortcut icon" href="/jive/jivfav.png"><title>jive-online</title>
-<script>
-function jive() {
-  //code execution
-  out = "" ; s = [] ; p = 0 ; num = r(1, 11)
-  i = document.getElementById("i").value.split("\n")
-  code = document.getElementById("c").value
-  while (p < code.length) {
-           if (code[p] == "*") { s.push(i.shift())
-    } else if (code[p] == "↓") { out += s.pop() + "\n"
-    } else if (code[p]in num) { s.push(Number(code[p]))
-    } else if (code[p] == "↑") { out += "["+s+"]"
-    } else if (code[p] == ":") { while (code[p] !== ":" ) { p++ }
-    } else if (code[p] == "!") { s.push(fact(s.pop()))
-    } else if (code[p] == "[") { s.push(r(1,s.pop()+1)) }
-    p++
-  }
-    document.getElementById("o").innerHTML = out //output the out variable
-}
-</script>
 <style>
 *{background-color:#202027 ; color:white}
 a{color:blue}
