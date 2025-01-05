@@ -18,7 +18,7 @@ function jive() {
     } else if (code[p] == "↑") { out += "["+s+"]"
     } else if (code[p] == ":") { while (code[p] !== ":" ) { p++ }
     } else if (code[p] == "!") { s.push(fact(s.pop()))
-    } else if (code[p] == "[") { s.push(r(1,s.pop()+1)) }
+    } else if (code[p] == "[") { s.push(r(1,s.pop())) }
     p++
   }
     document.getElementById("o").innerHTML = out //output the out variable
