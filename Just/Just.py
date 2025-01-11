@@ -1,5 +1,5 @@
-i="""""";c="""""".split("\n")[0]
-p=m=0;s=[];ts=[];s.append(c)
+i="""""";c="""""".split("\n")
+p=m=0;s=[];ts=[];s.append(c.pop(0))
 while 1:
  if i[p]=="\"":
   p+=1
@@ -13,7 +13,7 @@ while 1:
  if i[p]=="#":print(s.pop())
  elif i[p]=="k":print(s[-1])
  elif i[p]=="~":m=1
- elif i[p]=="␁":s.append(input())
+ elif i[p]=="␁":s.append(c.pop(0))
  p+=1
  if p==len(i) and m==0:break
  elif p==len(i) and m==1:
