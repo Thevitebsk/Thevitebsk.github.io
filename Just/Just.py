@@ -13,6 +13,7 @@ while 1:
  if i[p]=="#":print(s.pop())
  elif i[p]=="k":print(s[-1])
  elif i[p]=="~":m=1
+ elif i[p]=="␀":...
  p+=1
  if p==len(i) and m==0:break
  elif p==len(i) and m==1:
