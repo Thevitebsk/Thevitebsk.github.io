@@ -1,11 +1,11 @@
 i="""@hi|#"""
 p=m=0;s=[];ts=[]
 while 1:
- if i[p]=="@":
+ if i[p]=="\"":
   p+=1
   while 1:
    ts.append(i[p]);p+=1
-   if i[p]=="|":break
+   if i[p]=="\"":break
   ts.reverse()
   while len(ts)>1:ts.append(str(ts.pop())+str(ts.pop()))
   s.append(ts[0]);ts.pop
