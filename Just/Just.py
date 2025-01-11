@@ -1,4 +1,4 @@
-i=c="""""";c=c.split("\n")[0]
+i="""""";c="""""".split("\n")[0]
 p=m=0;s=[];ts=[];s.append(c)
 while 1:
  if i[p]=="\"":
