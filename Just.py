@@ -6,7 +6,8 @@ while 1:
   while 1:
    ts.append(i[p]);p+=1
    if i[p]=="|":break
-  while len(ts)>1:a=str(ts[0])+str(ts[1]);ts.pop(0);ts.pop(0);ts.reverse();ts.append(a);ts.reverse()
+  ts.reverse()
+  while len(ts)>1:ts.append(str(ts.pop())+str(ts.pop()))
   s.append(ts[0]);ts.pop
  if i[p]=="#":s.reverse();print(s[0]);s.reverse();s.pop()
  elif i[p]=="ƒ":s.reverse();print(s[0],end="");s.reverse();s.pop()
