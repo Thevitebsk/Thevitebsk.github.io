@@ -1,5 +1,6 @@
 i="""""";c="""""".split("\n")
-p=m=0;s=[];ts=[];while len(c)>0:s.append(c.pop())
+p=m=0;s=[];ts=[]
+while len(c)>0:s.append(c.pop())
 while 1:
  if i[p]=="\"":
   p+=1
