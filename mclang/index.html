@@ -1,11 +1,9 @@
 <h1>mclang</h1>a language made using just the mobile version of github<hr>
 <textarea id="c" placeholder="code"></textarea><br><input type="button" onclick="set(document.getElementById('c').value)" value="Set code">
-<tt id="c"></tt>
+<tt id="code"></tt>
 <style>
 *{ background-color:#444 ; color:#fff }
 </style>
 <script>
-function set(x){
-  //test function 
-}
+function set(x){ document.getElementById("code").InnerHTML=c }
 </script>
