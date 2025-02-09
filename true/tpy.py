@@ -1,9 +1,8 @@
 i=''''''
-p=-1;targ="";c="";sub=tp=0;ts=[];s=[];ld=[]
+targ="";c="";sub=tp=p=0;ts=[];s=[];ld=[]
 print("true")
 while 1:
  try:
-  p+=1
   if i[p]=='"':
    while i[p+1]!='"':p+=1;ts.append(i[p])
    ts.reverse();p+=1
@@ -36,4 +35,5 @@ while 1:
    while 1:
     if i[p]=="\n":break
     elif p==0:p=-1
+  p+=1
  except IndexError:break
