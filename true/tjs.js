@@ -10,7 +10,7 @@ function main(){
     else if (code[p]=="."){ if (s.length>0){ output += s.pop() } else { break } }
     else if (code[p]=="-"){if (s.length>0){ s.pop()} else { break } }
     else if (code[p]=="\n"){ break }
-    p++; if (perma){ cons += "\nPERMALINK: "+perma }
-  }
+    p++
+  } ; if (perma){ cons += "\nPERMALINK: "+perma }
   document.getElementById("console").innerHTML=cons
 }
