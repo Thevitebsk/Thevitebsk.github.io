@@ -5,7 +5,7 @@ if (put){ while (put.length>p){
     if (put[p+1]=="c"){
       p+=3; while (put.length>p){ pusch.push(put[p]) ; p++ }
     }
-  } }; document.getElementById("program").innerHTML = decodeURIComponent(pusch.join(''));
+  } }; document.getElementById("program").innerHTML= = decodeURIComponent(pusch.join(''));
 function main(){
   code=document.getElementById("program").value; input=document.getElementById("input").value.split("\n")
   p=0; output=''; s=[]; ts=[]; /* m=0;*/ cons=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length
