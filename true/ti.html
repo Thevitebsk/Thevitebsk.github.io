@@ -1,13 +1,11 @@
 <title>true.js</title>
 <script>
 pusch=[]; put=window.location.hash; p=0
-if (put){
-  while (put.length>p){
+if (put){ while (put.length>p){
     if (put[p+1]=="c"){
       p+=3; while (put.length>p){ pusch.push(put[p]) ; p++ }
     }
-  }
-}
+  } }
 document.getElementById("program").InnetHTML=pusch
 function main(){
   code=document.getElementById("program").value; input=document.getElementById("input").value.split("\n")
