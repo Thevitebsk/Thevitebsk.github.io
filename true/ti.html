@@ -4,7 +4,7 @@ pusch=[]; put=window.location.hash; p=0
 if (put){
   while (put.length>p){
     if (put[p+1]=="c"){
-      p++; while (put.length>p){ pusch.push(put[p]) ; p++ }
+      p+=3; while (put.length>p){ pusch.push(put[p]) ; p++ }
     }
   }
 }
