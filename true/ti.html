@@ -17,7 +17,7 @@ function main(){
     if (code[p]in num /*&& m==0*/){ s.push(code[p]) }
     else if (code[p]=="."){ if (s.length>0){ output += s.pop() } else { break } }
     else if (code[p]=="-"){if (s.length>0){ s.pop()} else { break } }
-    else if (code[p]=="\n"){ break }
+    //else if (code[p]=="\n"){ break }
     p++
   } ; if (perma!=="https://thevitebsk-github-io.vercel.app/true/ti.html#c="){ cons += "\nPERMALINK: "+perma }
   document.getElementById("console").innerHTML=cons
