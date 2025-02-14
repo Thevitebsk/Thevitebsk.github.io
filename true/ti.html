@@ -4,6 +4,9 @@ function main(){
   code = document.getElementById("program").value ; input = document.getElementById("input").value.split("\n") ; put = window.location.hash
   p = 0 ; output = '' ; s = [] ; ts = [] /*; m = 0*/ ; cons = output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length
   num = ["0","1","2","3","4","5","6","7","8","9"] ; perma = "https://thevitebsk-github-io.vercel.app/true/ti.html#c="+encodeURIComponent(document.getElementById("program").value)
+  while (put.length>p){
+    if (put[p+1]=="c"){ p++ ; while (put[p]!=="#"||put.length>p){ ts.push(put[p] } } }
+  p=0
   while (code.length>p){
     //i will focus on the strings later
     //if (code[p]=='"'){ m=1 ; p++ };
