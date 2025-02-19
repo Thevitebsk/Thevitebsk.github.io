@@ -24,9 +24,7 @@ while 1:
   elif i[p]=="`":s.append(int(s.pop())*-1)
   elif i[p]=="(":
    while i[p+1]!=")":ts.append(i[p+1]);p+=1
-   ts.reverse()
-   while len(ts)>1:ts.append(ts.pop()+ts.pop())
-   ld.append(ts.pop());p+=1
+   ld.append("".join(ts))
   elif i[p]=="[":
    while i[p]!="]":p+=1
   if len(i)-1==p:
