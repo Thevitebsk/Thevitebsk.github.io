@@ -5,9 +5,7 @@ while 1:
  try:
   if i[p]=='"':
    while i[p+1]!='"':p+=1;ts.append(i[p])
-   ts.reverse();p+=1
-   while len(ts)>1:ts.append(ts.pop()+ts.pop())
-   s.append(ts.pop())
+   s.append("".join(ts));ts.clear();p+=1
   elif i[p]=='.':print(s.pop(),end="")
   elif i[p]in list(map(str,range(10))):s.append(int(i[p]))
   elif i[p]==',':c=input()
