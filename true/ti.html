@@ -1,7 +1,5 @@
 <title>true.js</title>
 <script>
-url=decodeURIComponent(location.hash.slice(1))
-//document.getElementById("program").innerHTML=url
 function main(){
   code=document.getElementById("program").value; input=document.getElementById("input").value.split("\n")
   p=0; output=''; s=[]; ts=[]; /* m=0;*/
@@ -18,6 +16,8 @@ function main(){
   }
   document.getElementById("console").innerHTML=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length+"\nPERMALINK: "+"https://thevitebsk-github-io.vercel.app/true/ti.html#"+encodeURIComponent(code)
 }
+url=decodeURIComponent(location.hash.slice(1))
+if (url!=""){document.getElementById("program").innerHTML=url}
 </script>
 <style>
 * { background-color:#202027 ; color:white }
