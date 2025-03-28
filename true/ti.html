@@ -19,8 +19,8 @@ function main(){
 }
 url = location.origin + location.pathname;
 if (url !== location.href) {
-	u1 = location.href.split("#")[1];
-	code = u1;
+	u1 = decodeURIComponent(location.href.split("#")[1])
+	code = u1
 }
 </script>
 <style>
