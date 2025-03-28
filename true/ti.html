@@ -20,9 +20,8 @@ function main(){
 }
 url = location.origin + location.pathname;
 if (url !== location.href) {
-	u1 = location.href.split("#");
-	u2 = splitted[1];
-	code.value = u2;
+	u1 = location.href.split("#")[1];
+	code.value = u1;
 }
 </script>
 <style>
