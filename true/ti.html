@@ -17,7 +17,7 @@ function main(){
   document.getElementById("console").innerHTML=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length+"\nPERMALINK: "+"https://thevitebsk-github-io.vercel.app/true/ti.html#"+encodeURIComponent(code)
 }
 url=decodeURIComponent(location.hash.slice(1))
-if (url!=""){document.getElementById("program").innerHTML=url}
+if (url!=""){document.getElementById("program").innerHTML = decodeURIComponent(location.hash.slice(1))}
 </script>
 <style>
 * { background-color:#202027 ; color:white }
