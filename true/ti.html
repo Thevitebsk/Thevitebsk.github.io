@@ -14,7 +14,7 @@ function main(){
     //else if (code[p]=="\n"){ break }
     p++
   }
-  document.getElementById("console").innerHTML=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length+"\nPERMALINK: "+"https://thevitebsk-github-io.vercel.app/true/ti.html#"+encodeURIComponent(code)
+  document.getElementById("console").innerHTML=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length+"\nPERMALINK: "+"https://thevitebsk-github-io.vercel.app/true/ti.html"+if (code){"#"}+encodeURIComponent(code)
 }
 url=decodeURIComponent(location.hash.slice(1))
 if (url!=""){document.getElementById("program").innerHTML = decodeURIComponent(location.hash.slice(1))}
