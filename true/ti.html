@@ -1,6 +1,11 @@
 <title>true.js</title>
 <script>
 function main(){
+  url = location.origin + location.pathname;
+  if (url !== location.href) {
+	u1 = decodeURIComponent(location.href.split("#")[1])
+	code = u1
+  }
   var code=document.getElementById("program").value
   var input=document.getElementById("input").value.split("\n")
   p=0; output=''; s=[]; ts=[]; /* m=0;*/
@@ -16,11 +21,6 @@ function main(){
     p++
   }
   document.getElementById("console").innerHTML=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length
-}
-url = location.origin + location.pathname;
-if (url !== location.href) {
-	u1 = decodeURIComponent(location.href.split("#")[1])
-	code = u1
 }
 </script>
 <style>
