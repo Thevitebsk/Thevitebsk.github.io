@@ -1,10 +1,11 @@
 <title>true.js</title>
 <script>
 function main(){
+  var code=document.getElementById("program")
   url=location.origin + location.pathname;
-  if ( url!=location.href ) { code=decodeURIComponent(location.href.split("#")[1]) }
-  var code=document.getElementById("program").value
+  if ( url!=location.href ) { code.value=decodeURIComponent(location.href.split("#")[1]) }
   var input=document.getElementById("input").value.split("\n")
+  code=code.value
   p=0; output=''; s=[]; ts=[]; /* m=0;*/
   num=["0","1","2","3","4","5","6","7","8","9"]
   while (code.length>p){
@@ -17,6 +18,7 @@ function main(){
     //else if (code[p]=="\n"){ break }
     p++
   }
+  if code
   document.getElementById("console").innerHTML=output+'\nSTACK: ['+s+']\nTEMPSTACK: ['+ts+']\nBYTES: '+code.length
 }
 </script>
