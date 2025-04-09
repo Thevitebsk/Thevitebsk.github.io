@@ -10,6 +10,7 @@ while 1:
   elif code[p] == "." : print(s.pop())
   elif code[p] == "," : s.append(input())
   elif code[p] in "0123456789" : s.append(int(code[p]))
+  elif code[p] == "[" : p=code.index("]", p)
   if code[p] == "\n" : break
   if len(code)==p+1:p=-1
   p+=1
