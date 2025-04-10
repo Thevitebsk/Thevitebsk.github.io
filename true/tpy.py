@@ -23,6 +23,7 @@ while 1:
   elif code[p] == '(' :
     p+=1; ld.append(code[p : code.index(')', p)])
     p=code.index(')', p)
+  elif code[p] == "^" : s.append(s[int(s.pop())])
   if code[p] == "\n" : break
   if len(code) == p +1 : p = -1
   p += 1
