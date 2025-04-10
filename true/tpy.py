@@ -21,7 +21,7 @@ while 1:
   elif code[p] == "`" : s.append(int(s.pop())*-1)
   elif code[p] == ":" : s.append(s[-1])
   elif code[p] == '(' :
-    p+=1; s.append(code[p : code.index(')', p)])
+    p+=1; ld.append(code[p : code.index(')', p)])
     p=code.index(')', p)
   if code[p] == "\n" : break
   if len(code) == p +1 : p = -1
