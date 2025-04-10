@@ -2,7 +2,7 @@ import sys
 try: code = open(sys.argv[1]).read()
 except: print(f"Usage: python {__file__.split(chr(0x5c))[-1]} \"(file name)\"");exit()
 p = 0; ts = []; s = []
-if not code : code=" "
+if not code : code = " "
 while 1:
   if code[p] == '"' :
     p+=1;s.append(code[p : code.index('"', p)])
