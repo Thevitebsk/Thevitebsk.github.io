@@ -4,7 +4,7 @@ try:
   try: i = open(sys.argv[2]).readlines()
   except: i=[]
 except: print(f"Usage: python {__file__.split(chr(0x5c))[-1]} \"(file name)\"");exit()
-p = 0; ts = []; s = []
+p = 0; ts = []; s = []; ld = []
 if not code : code = " "
 while 1:
   if code[p] == '"' :
@@ -20,6 +20,9 @@ while 1:
   elif code[p] == "-" : s.pop()
   elif code[p] == "`" : s.append(int(s.pop())*-1)
   elif code[p] == ":" : s.append(s[-1])
+  elif code[p] == '(' :
+    p+=1; s.append(code[p : code.index(')', p)])
+    p=code.index(')', p)
   if code[p] == "\n" : break
   if len(code) == p +1 : p = -1
   p += 1
