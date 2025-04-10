@@ -12,7 +12,7 @@ while 1:
     p=code.index('"', p)
   elif code[p] == "." : print(s.pop())
   elif code[p] == "," : 
-    if i : s.append(i.pop())
+    if i : s.append(i.pop(0))
     else : raise EOFError("Input reached an EOF")
   elif code[p] in "0123456789" : s.append(int(code[p]))
   elif code[p] == "[" : p=code.index("]", p)
