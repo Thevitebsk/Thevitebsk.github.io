@@ -1,4 +1,17 @@
-p {font-size: 18px}
-* {color:#fff; background-color:#333}
-h1 {border-style: none none solid none; border-color:#F53}
-h2, h3, h4, h5, h6 {border-style: none none solid none; border-size:8px; border-color:#53F}
+p { font-size: 25px }
+* {
+    color:#fff;
+    background-color:#333
+}
+h1 {
+    border-style: none none solid none;
+    border-width:8px;
+    border-color:#F53;
+    font-size:55px
+}
+h2, h3, h4 {
+    border-style: none none solid none;
+    border-width:4px;
+    border-color:#53F;
+    font-size:35px
+}
